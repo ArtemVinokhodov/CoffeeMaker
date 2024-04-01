@@ -5,10 +5,12 @@ import java.util.Scanner;
 public class Menu {
     public void viewCoffeeMenu() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Choose a drink: \n" +
-                "1 - Espresso \n" +
-                "2 - Cappuccino \n" +
-                "3 - Latte \n");
+        System.out.println("""
+                Choose a drink:\s
+                1 - Espresso\s
+                2 - Cappuccino\s
+                3 - Latte\s
+                """);
 
         int getNumber = scanner.nextInt();
         switch (getNumber) {
